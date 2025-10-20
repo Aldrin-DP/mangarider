@@ -28,7 +28,7 @@
                 <span class="cursor-pointer hover:text-green-500">View All</span>
             </RouterLink>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             <div v-for="(manga, index) in upcomingMangas">
                 <div class="aspect-[2/3]">
                     <img :src="manga.images.jpg.large_image_url" :alt="manga.title" class="h-full w-full object-cover rounded">

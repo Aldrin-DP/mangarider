@@ -86,9 +86,9 @@
                 this.windowWidth = window.innerWidth;
             },
             truncateWords(text, limit) {
-                if (limit === 0) return '';
+                if (!text || limit === 0) return '';
                 const words = text.split(" ");
-                return words.slice(text, limit).join(" ") + (words.length > limit ? '...' : '');
+                return words.slice(0, limit).join(" ") + (words.length > limit ? '...' : '');
             }
         }
     }

@@ -6,9 +6,8 @@
             <div class="h-8 w-[200px] bg-gray-200 rounded mt-3"></div>
         </div>
         <div class="w-full">
-            <div class="w-full h-8 bg-gray-200"></div>
-            <div class="w-1/2 h-4 bg-gray-200"></div>
-            <div class="h-14 w-1/2 bg-gray-200"></div>
+            <div class="w-full md:w-1/2 h-8 bg-gray-200 mb-2"></div>
+            <div class="w-full h-48 bg-gray-200"></div>
         </div>
     </div>
     <div>
@@ -27,12 +26,12 @@
         <button
           class="bg-green-500 w-full text-green-900 font-bold py-2 mt-3 rounded"
         >
-          Add to favorites
+          Read Manga
         </button>
       </div>
 
       <div class="flex-1">
-        <h1 class="text-green-500 text-xl font-medium mb-1">
+        <h1 class="text-green-500 md:text-xl font-medium mb-1">
           {{ mangaDetails.title }}
         </h1>
 
@@ -62,7 +61,7 @@
         <span
           v-for="(genre, index) in mangaDetails.genres"
           :key="index"
-          class="mt-1 px-2 py-1 text-sm rounded border border-gray-300 me-2 inline-block"
+          class="text-xs px-1  py-1 mt-1 sm sm:px-2 sm:py-1 sm:text-sm rounded border border-gray-300 me-2 inline-block"
         >
           {{ genre.name }}
         </span>
@@ -155,8 +154,8 @@ export default {
       if (!this.mangaDetails || !this.mangaDetails.synopsis) return;
 
       const words = this.mangaDetails.synopsis.split(" ");
-      if (words.length > 105) {
-        this.truncatedWords = words.slice(0, 105).join(" ") + "...";
+      if (words.length > 80) {
+        this.truncatedWords = words.slice(0, 80).join(" ") + "...";
       } else {
         this.truncatedWords = this.mangaDetails.synopsis;
       }
