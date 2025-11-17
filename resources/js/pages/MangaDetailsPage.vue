@@ -49,7 +49,7 @@
 
           <span v-else>
             {{ mangaDetails.synopsis }}
-            <span
+            <span 
               class="text-green-500 cursor-pointer"
               @click="showFullSynopsis = false"
             >
@@ -132,7 +132,7 @@ export default {
         this.mangaDetails = this.cache[id];
         this.truncateWords();
         this.loading = false;
-        return;
+        return; 
       }
 
       try {
@@ -145,7 +145,7 @@ export default {
 
       } catch (error) {
         console.error("Error fetching manga details", error);
-      } finally {
+      } finally { 
         this.loading = false;
       }
     },
