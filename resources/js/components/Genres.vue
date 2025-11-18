@@ -32,7 +32,7 @@ export default {
         { id: 10, name: 'Fantasy' },
         { id: 11, name: 'Harem' },
         { id: 14, name: 'Horror' },
-        { id: 37, name: 'Isekai' },
+        { id: 62, name: 'Isekai' },
         { id: 17, name: 'Martial Arts' },
         { id: 7, name: 'Mystery' },
         { id: 22, name: 'Romance' },

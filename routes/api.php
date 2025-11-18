@@ -12,7 +12,7 @@ Route::get('/manga/upcoming', [MangaController::class, 'getUpcomingMangas']);
 Route::get('/manga/completed', [MangaController::class, 'getCompletedMangas']);
 Route::get('/manga/genres', [MangaController::class, 'getGenres']);
 Route::get('/manga/az', [MangaController::class, 'getMangasByLetter']);
-Route::get('/manga/genre', [MangaController::class, 'getMangasByGenre']);
+Route::get('/manga/genre/', [MangaController::class, 'getMangasByGenre']);
 
 Route::get('/manga/{id}', [MangaController::class, 'getMangaDetails']);
 
