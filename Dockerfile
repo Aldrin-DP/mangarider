@@ -6,8 +6,8 @@ RUN apt-get update && apt-get install -y \
     curl zip unzip git libzip-dev libonig-dev libpng-dev \
     build-essential python3 g++ make
 
-# Install Node.js (v18)
-RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+# Install Node.js 20
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
     && apt-get install -y nodejs
 
 # Install Composer
