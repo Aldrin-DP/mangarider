@@ -41,11 +41,11 @@
 
 
 <script>
-import logo from '@/assets/images/logo3.png';
+
 export default {
     data() {
         return {
-            logo
+            logo: '/images/logo3.png'
         }
     }
 }
