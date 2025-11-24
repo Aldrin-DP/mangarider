@@ -65,7 +65,6 @@ export default {
                 const response = await fetch('/api/manga/upcoming');
                 const data = await response.json();
                 this.upcomingMangas = data.data;
-                console.log(data.data);
             } catch(error) {
                 console.error('Error to fetch upcoming manga.', error);
             } finally {

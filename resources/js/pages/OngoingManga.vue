@@ -58,7 +58,6 @@ export default {
                 const response = await fetch('/api/manga/ongoing');
                 const data = await response.json();
                 this.ongoingMangas = data.data;
-                console.log(data.data);
             } catch(error) {
                 console.error('Error to fetch ongoing manga.', error);
             } finally {

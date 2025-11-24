@@ -45,7 +45,6 @@
                     const response = await fetch('/api/manga/popular');
                     const data = await response.json();
                     this.popularMangas = data.data;
-                    console.log(data.data);
                 } catch (error) {
                     console.error("Error fetching popular manga:", error);
                 } finally {

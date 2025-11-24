@@ -75,7 +75,6 @@
                     const response = await fetch('/api/manga/new');
                     const data = await response.json();
                     this.newMangas = data.data;
-                    console.log(data.data);
                 } catch (error) {
                     console.error("Error fetching new manga:", error);
                 } finally {

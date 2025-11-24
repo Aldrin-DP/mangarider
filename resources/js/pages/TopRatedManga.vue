@@ -58,7 +58,6 @@ export default {
                 const response = await fetch('/api/manga/top');
                 const data = await response.json();
                 this.topRatedMangas = data.data;
-                console.log(data.data);
             } catch(error) {
                 console.error('Error to fetch top rated manga.', error);
             } finally {

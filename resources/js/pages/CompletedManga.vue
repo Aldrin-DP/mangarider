@@ -58,7 +58,6 @@ export default {
                 const response = await fetch('/api/manga/completed');
                 const data = await response.json();
                 this.completedMangas = data.data;
-                console.log(data.data);
             } catch(error) {
                 console.error('Error to fetch completed manga.', error);
             } finally {

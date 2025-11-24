@@ -57,10 +57,8 @@ export default {
         const response = await fetch(`/api/manga/new?page=${this.page}`);
         const data = await response.json();
 
-        // Append new results
         this.newMangas.push(...data.data);
 
-        // Check pagination info
         this.hasNextPage = data.pagination.has_next_page;
       } catch (error) {
         console.error("Error fetching new mangas:", error);
