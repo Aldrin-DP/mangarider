@@ -45,7 +45,7 @@
 export default {
     data() {
         return {
-            logo: 'assets/images/logo3.png'
+            logo: '/images/logo3.png'
         }
     }
 }
