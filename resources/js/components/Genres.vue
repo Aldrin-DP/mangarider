@@ -5,7 +5,7 @@
       <RouterLink
         v-for="(genre, index) in genres"
         :key="index"
-        :to="{ name: 'GenreMangaAll', params: { genreId: genre.id } }"
+        :to="{ name: 'GenreMangaAll', params: { genreId: genre.id, genreName: genre.name } }"
         class="text-center px-2 py-1 cursor-pointer transition-all duration-200 rounded"
         :class="{
             'bg-green-500 text-white': isActiveGenre(genre.id),

@@ -1,7 +1,7 @@
 <template>
   <div class="mt-2 sm:w-11/12 sm:m-auto sm:mt-2 md:w-full md:px-5">
     <div class="flex justify-between">
-      <h3 class="heading">Genre Manga</h3>
+      <h3 class="heading">{{ genreName }} Manga</h3>
     </div>
 
     <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">

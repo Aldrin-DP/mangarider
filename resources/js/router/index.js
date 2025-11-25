@@ -27,9 +27,13 @@ const routes = [
     { path: '/manga/new/all', name: 'NewMangaAll', component: NewMangaAllPage },
     { path: '/manga/completed/all', name: 'CompletedMangaAll', component: CompletedMangaAllPage },
     { path: '/manga/upcoming/all', name: 'UpcomingMangaAll', component: UpcomingMangaAllPage },
-    { path: '/manga/genre/:genreId', name: 'GenreMangaAll', component: GenreMangaAllPage,
-        props: route => ({ genreId: route.params.genreId, genreName: route.query.genreName })
-    },
+    { 
+  path: '/manga/genre/:genreId/:genreName',
+  name: 'GenreMangaAll',
+  component: GenreMangaAllPage,
+  props: true
+},
+
 
 ];
 

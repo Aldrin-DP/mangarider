@@ -24,7 +24,8 @@
           class="h-[300px] w-[200px] md:h-[400px] md:w-[260px] rounded"
         />
         <button
-          class="bg-green-500 w-full text-green-900 font-bold py-2 mt-3 rounded"
+          class="bg-gray-600 w-full font-bold py-2 mt-3 rounded disabled:opacity-50 disabled:cursor-not-allowed"
+          disabled
         >
           Read Manga
         </button>
